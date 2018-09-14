@@ -1,5 +1,5 @@
 <?php
-
+declare(strict_types=1);
 namespace MongoPhinx;
 
 use MongoDB\Client;
@@ -54,12 +54,15 @@ class MongoMigrationAdapter implements PhinxAdapter
         $this->connect();
     }
 
-    public function getVersions()
+    /**
+     * @return array
+     */
+    public function getVersions(): array
     {
         return array_keys($this->getVersionLog());
     }
 
-    public function getVersionLog()
+    public function getVersionLog(): array
     {
         $result = [];
         $rows = $this->getMigrationCollection()->find();
@@ -69,21 +72,29 @@ class MongoMigrationAdapter implements PhinxAdapter
         return $result;
     }
 
-    public function setOptions(array $options)
+    /**
+     * @param array $options
+     * @return $this|PhinxAdapter
+     */
+    public function setOptions(array $options): PhinxAdapter
     {
         return $this;
     }
 
-    public function getOptions()
+    public function getOptions(): array
     {
         return $this->options;
     }
 
-    public function hasOption($name)
+    public function hasOption($name): bool
     {
         return true;
     }
 
+    /**
+     * @param string $name
+     * @return mixed|null
+     */
     public function getOption($name)
     {
         if(isset($this->options[$name])) {
@@ -92,29 +103,47 @@ class MongoMigrationAdapter implements PhinxAdapter
         return null;
     }
 
-    public function setInput(InputInterface $input)
+    /**
+     * @param InputInterface $input
+     * @return $this|PhinxAdapter
+     */
+    public function setInput(InputInterface $input): PhinxAdapter
     {
         $this->consoleInput = $input;
         return $this;
     }
 
-    public function getInput()
+    /**
+     * @return InputInterface
+     */
+    public function getInput(): InputInterface
     {
         return $this->consoleInput;
     }
 
-    public function setOutput(OutputInterface $output)
+    /**
+     * @param OutputInterface $output
+     * @return PhinxAdapter
+     */
+    public function setOutput(OutputInterface $output): PhinxAdapter
     {
         $this->consoleOutput = $output;
         return $this;
     }
 
-    public function getOutput()
+    public function getOutput(): OutputInterface
     {
         return $this->consoleOutput;
     }
 
-    public function migrated(MigrationInterface $migration, $direction, $startTime, $endTime)
+    /**
+     * @param MigrationInterface $migration
+     * @param string $direction
+     * @param int $startTime
+     * @param int $endTime
+     * @return $this|PhinxAdapter
+     */
+    public function migrated(MigrationInterface $migration, $direction, $startTime, $endTime): PhinxAdapter
     {
         if(strcasecmp($direction, MigrationInterface::UP) === 0) {
             $this->getMigrationCollection()->insertOne([
@@ -132,23 +161,31 @@ class MongoMigrationAdapter implements PhinxAdapter
         return $this;
     }
 
-    public function toggleBreakpoint(MigrationInterface $migration)
+    /**
+     * @param MigrationInterface $migration
+     * @return $this|PhinxAdapter
+     */
+    public function toggleBreakpoint(MigrationInterface $migration): PhinxAdapter
     {
         return $this;
     }
 
     public function resetAllBreakpoints()
     {
+        throw new \InvalidArgumentException("Not implemented");
     }
 
-    public function hasSchemaTable()
+    /**
+     * @return bool
+     */
+    public function hasSchemaTable(): bool
     {
         return true;
     }
 
     public function createSchemaTable()
     {
-
+        throw new \InvalidArgumentException("Not implemented");
     }
 
     public function getAdapterType()
@@ -156,7 +193,7 @@ class MongoMigrationAdapter implements PhinxAdapter
         return null;
     }
 
-    public function connect()
+    public function connect(): void
     {
         $this->mongoClient = new Client($this->uri);
         $this->database = $this->mongoClient->selectDatabase($this->databaseName);
@@ -165,23 +202,27 @@ class MongoMigrationAdapter implements PhinxAdapter
 
     public function disconnect()
     {
+        throw new \InvalidArgumentException("Not implemented");
     }
 
-    public function hasTransactions()
+    public function hasTransactions(): bool
     {
         return false;
     }
 
     public function beginTransaction()
     {
+        throw new \InvalidArgumentException("Not implemented");
     }
 
     public function commitTransaction()
     {
+        throw new \InvalidArgumentException("Not implemented");
     }
 
     public function rollbackTransaction()
     {
+        throw new \InvalidArgumentException("Not implemented");
     }
 
     public function execute($sql)
@@ -189,39 +230,36 @@ class MongoMigrationAdapter implements PhinxAdapter
         throw new \InvalidArgumentException("Don't know how to execute");
     }
 
-    public function executeActions(Table $table, array $actions)
+    public function executeActions(Table $table, array $actions): void
     {
         foreach ($actions as $action) {
-            switch (true) {
-                case ($action instanceof AddIndex):
-                    $columns = $action->getIndex()->getColumns();
-                    $options = [];
-                    $indexName = $action->getIndex()->getName();
-                    if(!empty($indexName)){
-                        $options['name'] = $indexName;
-                    }
-                    $this->getDatabase()
-                        ->selectCollection($action->getTable()->getName())
-                        ->createIndex($columns, $options);
-                    break;
 
-                case ($action instanceof DropIndex):
-                    $indexName = $action->getIndex()->getName();
-                    if(!empty($indexName)) {
-                        $this->getDatabase()->selectCollection($action->getTable()->getName())
-                            ->dropIndex($indexName);
-                    }
-                    break;
-
-                case ($action instanceof DropTable):
-                    $this->getDatabase()
-                        ->dropCollection($action->getTable()->getName());
-                    break;
-
-                default:
-                    throw new \InvalidArgumentException(
-                        sprintf("Don't know how to execute action: '%s'", get_class($action))
-                    );
+            if($action instanceof AddIndex) {
+                $columns = $action->getIndex()->getColumns();
+                $options = [];
+                $indexName = $action->getIndex()->getName();
+                if (!empty($indexName)) {
+                    $options['name'] = $indexName;
+                }
+                $this->getDatabase()
+                    ->selectCollection($action->getTable()->getName())
+                    ->createIndex($columns, $options);
+            }
+            elseif ($action instanceof DropIndex) {
+                $indexName = $action->getIndex()->getName();
+                if (!empty($indexName)) {
+                    $this->getDatabase()->selectCollection($action->getTable()->getName())
+                        ->dropIndex($indexName);
+                }
+            }
+            elseif ($action instanceof DropTable) {
+                $this->getDatabase()
+                    ->dropCollection($action->getTable()->getName());
+            }
+            else {
+                throw new \InvalidArgumentException(
+                    sprintf("Don't know how to execute action: '%s'", get_class($action))
+                );
             }
         }
     }
@@ -233,83 +271,148 @@ class MongoMigrationAdapter implements PhinxAdapter
 
     public function query($sql)
     {
+        throw new \InvalidArgumentException("Not implemented");
     }
 
     public function fetchRow($sql)
     {
+        throw new \InvalidArgumentException("Not implemented");
     }
 
     public function fetchAll($sql)
     {
+        throw new \InvalidArgumentException("Not implemented");
     }
 
-    public function insert(Table $table, $row)
+    /**
+     * @param Table $table
+     * @param array $row
+     */
+    public function insert(Table $table, $row): void
     {
         $this->getDatabase()->selectCollection($table->getName())->insertOne($row);
     }
 
-    public function bulkinsert(Table $table, $rows)
+    /**
+     * @param Table $table
+     * @param array $rows
+     */
+    public function bulkinsert(Table $table, $rows): void
     {
         $this->getDatabase()->selectCollection($table->getName())->insertMany($rows);
     }
 
-    public function quoteTableName($tableName)
+    /**
+     * @param string $tableName
+     * @return mixed|string
+     */
+    public function quoteTableName($tableName): string
     {
         return str_replace('.', '`.`', $this->quoteColumnName($tableName));
     }
 
-    public function quoteColumnName($columnName)
+    /**
+     * @param string $columnName
+     * @return string
+     */
+    public function quoteColumnName($columnName): string
     {
         return '`' . str_replace('`', '``', $columnName) . '`';
     }
 
-    public function hasTable($tableName)
+    /**
+     * @param string $tableName
+     * @return bool
+     */
+    public function hasTable($tableName): bool
     {
         return true;
     }
 
+    /**
+     * @param Table $table
+     * @param array $columns
+     * @param array $indexes
+     */
     public function createTable(Table $table, array $columns = [], array $indexes = [])
     {
     }
 
-    public function truncateTable($tableName)
+    /**
+     * @param string $tableName
+     */
+    public function truncateTable($tableName): void
     {
         $this->getDatabase()->dropCollection($tableName);
     }
 
+    /**
+     * @param string $tableName
+     * @return array|Column[]
+     */
     public function getColumns($tableName)
     {
         return [];
     }
 
-    public function hasColumn($tableName, $columnName)
+    /**
+     * @param string $tableName
+     * @param string $columnName
+     * @return bool
+     */
+    public function hasColumn($tableName, $columnName): bool
     {
         return true;
     }
 
-    public function hasIndex($tableName, $columns)
+    /**
+     * @param string $tableName
+     * @param mixed $columns
+     * @return bool|void
+     */
+    public function hasIndex($tableName, $columns): bool
     {
         $indexes = $this->getDatabase()->selectCollection($tableName)->listIndexes();
         $this->hasValues($indexes, $columns);
     }
 
-    public function hasIndexByName($tableName, $indexName)
+    /**
+     * @param string $tableName
+     * @param string $indexName
+     * @return bool
+     */
+    public function hasIndexByName($tableName, $indexName): bool
     {
         $indexes = $this->getDatabase()->selectCollection($tableName)->listIndexes();
-        $this->hasValue($indexes, $indexName);
+        return $this->hasValue($indexes, $indexName);
     }
 
-    public function hasPrimaryKey($tableName, $columns, $constraint = null)
+    /**
+     * @param string $tableName
+     * @param string[] $columns
+     * @param null $constraint
+     * @return bool
+     */
+    public function hasPrimaryKey($tableName, $columns, $constraint = null): bool
     {
         return true;
     }
 
-    public function hasForeignKey($tableName, $columns, $constraint = null)
+    /**
+     * @param string $tableName
+     * @param string[] $columns
+     * @param null $constraint
+     * @return bool
+     */
+    public function hasForeignKey($tableName, $columns, $constraint = null): bool
     {
         return false;
     }
 
-    public function getColumnTypes()
+    /**
+     * @return array
+     */
+    public function getColumnTypes(): array
     {
         return [
             self::PHINX_TYPE_BIG_INTEGER,
@@ -320,54 +423,87 @@ class MongoMigrationAdapter implements PhinxAdapter
         ];
     }
 
-    public function isValidColumnType(Column $column)
+    /**
+     * @param Column $column
+     * @return bool
+     */
+    public function isValidColumnType(Column $column): bool
     {
         return true;
     }
 
-    public function getSqlType($type, $limit = null)
+    /**
+     * @param string $type
+     * @param null $limit
+     * @return array|string[]
+     */
+    public function getSqlType($type, $limit = null): array
     {
         return [];
     }
 
-    public function createDatabase($name, $options = [])
+    /**
+     * @param string $name
+     * @param array $options
+     */
+    public function createDatabase($name, $options = []): void
     {
     }
 
-    public function hasDatabase($name)
+    /**
+     * @param string $name
+     * @return bool
+     */
+    public function hasDatabase($name): bool
     {
         return true;
     }
 
-    public function dropDatabase($name)
+    /**
+     * @param string $name
+     */
+    public function dropDatabase($name): void
     {
         $this->mongoClient->dropDatabase($name);
     }
 
     public function createSchema($schemaName = 'public')
     {
+        throw new \InvalidArgumentException("Not implemented");
     }
 
-    public function dropSchema($schemaName)
+    /**
+     * @param string $schemaName
+     */
+    public function dropSchema($schemaName): void
     {
         $this->getDatabase()->dropCollection($schemaName);
     }
 
     public function castToBool($value)
     {
+        throw new \InvalidArgumentException("Not implemented");
     }
 
-    protected function getMigrationCollection()
+    protected function getMigrationCollection(): Collection
     {
         return $this->collection;
     }
 
-    protected function getDatabase()
+    /**
+     * @return Database
+     */
+    protected function getDatabase(): Database
     {
         return $this->database;
     }
 
-    protected function hasValue(\Iterator $iterator, $value)
+    /**
+     * @param \Iterator $iterator
+     * @param $value
+     * @return bool
+     */
+    protected function hasValue(\Iterator $iterator, $value): bool
     {
         foreach ($iterator as $iteration) {
             if ($iteration == $value){
@@ -377,7 +513,12 @@ class MongoMigrationAdapter implements PhinxAdapter
         return false;
     }
 
-    protected function hasValues(\Iterator $iterator, $values)
+    /**
+     * @param \Iterator $iterator
+     * @param $values
+     * @return bool
+     */
+    protected function hasValues(\Iterator $iterator, $values): bool
     {
         foreach ($iterator as $iteration) {
             if ($this->hasValue($iteration, $values)){
@@ -387,6 +528,9 @@ class MongoMigrationAdapter implements PhinxAdapter
         return false;
     }
 
+    /**
+     * @return Client|\PDO
+     */
     public function getConnection()
     {
         return $this->mongoClient;

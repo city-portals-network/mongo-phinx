@@ -1,5 +1,5 @@
 <?php
-
+declare(strict_types=1);
 namespace MongoPhinx\Tests\integration;
 
 use MongoDB\Client;
@@ -35,7 +35,7 @@ class MigrationsTest extends TestCase
      */
     public function testInsert()
     {
-        $this->app->run(new StringInput('migrate -e development -c ../phinx.yml -t 20180913043440'),
+        $this->app->run(new StringInput('migrate -e development -c '.__DIR__.'/../phinx.yml -t 20180913043440'),
             new NullOutput());
         $row = $this->database->selectCollection('from_migration')->findOne(['simple' => 'hello world']);
         $this->assertTrue(!empty($row));
@@ -47,7 +47,7 @@ class MigrationsTest extends TestCase
      */
     public function testAddIndexes()
     {
-        $this->app->run(new StringInput('migrate -e development -c ../phinx.yml -t 20180913094403'),
+        $this->app->run(new StringInput('migrate -e development -c '.__DIR__.'/../phinx.yml -t 20180913094403'),
             new NullOutput());
         $indexes = $this->database->selectCollection('table_with_indexes')->listIndexes();
         $list = self::_GetIndexArray($indexes);
@@ -65,8 +65,8 @@ class MigrationsTest extends TestCase
      */
     public function testRollback()
     {
-        $this->app->run(new StringInput('migrate -e development -c ../phinx.yml'), new NullOutput());
-        $this->app->run(new StringInput('rollback -e development -c ../phinx.yml -t 0'),
+        $this->app->run(new StringInput('migrate -e development -c '.__DIR__.'/../phinx.yml'), new NullOutput());
+        $this->app->run(new StringInput('rollback -e development -c '.__DIR__.'/../phinx.yml -t 0'),
             new NullOutput());
         $indexes = $this->database->selectCollection('table_with_indexes')->listIndexes();
         $list = self::_GetIndexArray($indexes);
