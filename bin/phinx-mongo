@@ -1,6 +1,8 @@
 #!/usr/bin/env php
 <?php
-require __DIR__ . '../vendor/autoload.php';
+
+$composer_autoloader = require __DIR__ . '/../src/composer_autoloader.php';
+$composer_autoloader();
 
 use Phinx\Console\PhinxApplication;
 use Phinx\Db\Adapter\AdapterFactory;
