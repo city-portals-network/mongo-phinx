@@ -18,7 +18,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 class MongoMigrationAdapter implements PhinxAdapter
 {
-    const COLLECTION_NAME = 'phinx_migration';
+    protected $collectionName = 'phinx_migration';
 
     /** @var InputInterface $consoleInput */
     protected $consoleInput;
@@ -49,6 +49,7 @@ class MongoMigrationAdapter implements PhinxAdapter
 
     function __construct(array $options)
     {
+        $this->collectionName = $options['default_migration_table'];
         $this->databaseName = $options['name'];
         $this->uri = $options['uri'];
         $this->options = $options;
@@ -198,7 +199,7 @@ class MongoMigrationAdapter implements PhinxAdapter
     {
         $this->mongoClient = new Client($this->uri);
         $this->database = $this->mongoClient->selectDatabase($this->databaseName);
-        $this->collection = $this->database->selectCollection(self::COLLECTION_NAME);
+        $this->collection = $this->database->selectCollection($this->collectionName);
     }
 
     public function disconnect()
@@ -241,6 +242,10 @@ class MongoMigrationAdapter implements PhinxAdapter
                 $indexName = $action->getIndex()->getName();
                 if (!empty($indexName)) {
                     $options['name'] = $indexName;
+                }
+                $type = $action->getIndex()->getType();
+                if ($type == 'unique') {
+                    $options['unique'] = true;
                 }
                 $this->getDatabase()
                     ->selectCollection($action->getTable()->getName())
