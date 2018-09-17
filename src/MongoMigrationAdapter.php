@@ -1,5 +1,6 @@
 <?php
 declare(strict_types=1);
+
 namespace MongoPhinx;
 
 use MongoDB\Client;
@@ -66,7 +67,7 @@ class MongoMigrationAdapter implements PhinxAdapter
     {
         $result = [];
         $rows = $this->getMigrationCollection()->find();
-        foreach ($rows as $row){
+        foreach ($rows as $row) {
             $result[$row['version']] = $row;
         }
         return $result;
@@ -97,7 +98,7 @@ class MongoMigrationAdapter implements PhinxAdapter
      */
     public function getOption($name)
     {
-        if(isset($this->options[$name])) {
+        if (isset($this->options[$name])) {
             return $this->options[$name];
         }
         return null;
@@ -145,7 +146,7 @@ class MongoMigrationAdapter implements PhinxAdapter
      */
     public function migrated(MigrationInterface $migration, $direction, $startTime, $endTime): PhinxAdapter
     {
-        if(strcasecmp($direction, MigrationInterface::UP) === 0) {
+        if (strcasecmp($direction, MigrationInterface::UP) === 0) {
             $this->getMigrationCollection()->insertOne([
                 'name' => $migration->getName(),
                 'start_time' => $startTime,
@@ -234,7 +235,7 @@ class MongoMigrationAdapter implements PhinxAdapter
     {
         foreach ($actions as $action) {
 
-            if($action instanceof AddIndex) {
+            if ($action instanceof AddIndex) {
                 $columns = $action->getIndex()->getColumns();
                 $options = [];
                 $indexName = $action->getIndex()->getName();
@@ -244,19 +245,16 @@ class MongoMigrationAdapter implements PhinxAdapter
                 $this->getDatabase()
                     ->selectCollection($action->getTable()->getName())
                     ->createIndex($columns, $options);
-            }
-            elseif ($action instanceof DropIndex) {
+            } elseif ($action instanceof DropIndex) {
                 $indexName = $action->getIndex()->getName();
                 if (!empty($indexName)) {
                     $this->getDatabase()->selectCollection($action->getTable()->getName())
                         ->dropIndex($indexName);
                 }
-            }
-            elseif ($action instanceof DropTable) {
+            } elseif ($action instanceof DropTable) {
                 $this->getDatabase()
                     ->dropCollection($action->getTable()->getName());
-            }
-            else {
+            } else {
                 throw new \InvalidArgumentException(
                     sprintf("Don't know how to execute action: '%s'", get_class($action))
                 );
@@ -506,7 +504,7 @@ class MongoMigrationAdapter implements PhinxAdapter
     protected function hasValue(\Iterator $iterator, $value): bool
     {
         foreach ($iterator as $iteration) {
-            if ($iteration == $value){
+            if ($iteration == $value) {
                 return true;
             }
         }
@@ -521,7 +519,7 @@ class MongoMigrationAdapter implements PhinxAdapter
     protected function hasValues(\Iterator $iterator, $values): bool
     {
         foreach ($iterator as $iteration) {
-            if ($this->hasValue($iteration, $values)){
+            if ($this->hasValue($iteration, $values)) {
                 return true;
             }
         }
