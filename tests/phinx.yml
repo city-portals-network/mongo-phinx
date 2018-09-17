@@ -3,7 +3,7 @@ paths:
     seeds: '%%PHINX_CONFIG_DIR%%/seeds'
 
 environments:
-    default_migration_table: phinxlog
+    default_migration_table: phinx_migration
     default_database: afisha_dev
     production:
         adapter: mongo
