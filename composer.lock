@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0627c656e96b98897cd8c17ef78cb168",
+    "content-hash": "9fac4be663789ea9ffb3b406da232e40",
     "packages": [
         {
             "name": "cakephp/cache",
@@ -2825,7 +2825,8 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.1.0"
+        "php": ">=7.1.0",
+        "ext-pdo": "*"
     },
     "platform-dev": [],
     "platform-overrides": {

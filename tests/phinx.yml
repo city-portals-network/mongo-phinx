@@ -1,0 +1,26 @@
+paths:
+    migrations: '%%PHINX_CONFIG_DIR%%/migrations'
+    seeds: '%%PHINX_CONFIG_DIR%%/seeds'
+
+environments:
+    default_migration_table: phinxlog
+    default_database: afisha_dev
+    production:
+        adapter: mongo
+        name: migration_test
+        uri: mongodb://127.0.0.1/
+        version: 1
+
+    development:
+        adapter: mongo
+        uri: mongodb://127.0.0.1/
+        name: migration_test
+        version: 1
+
+    testing:
+        adapter: mongo
+        name: migration_test
+        uri: mongodb://127.0.0.1/
+        version: 1
+
+version_order: creation
