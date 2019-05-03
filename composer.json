@@ -1,10 +1,9 @@
 {
-  "name": "portal/mongo-phinx",
+  "name": "city-portals-network/mongo-phinx",
   "description": "MongoDB Phinx Adapter",
   "keywords": [
     "MongoDB, phinx"
   ],
-  "license": "proprietary",
   "authors": [
     {
       "name": "Garipov Azamat",
@@ -24,33 +23,14 @@
       "MongoPhinx\\Tests\\": "tests/"
     }
   },
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "http://composer.package.portal/repo/private/"
-    },
-    {
-      "type": "composer",
-      "url": "http://composer.package.portal/repo/packagist/"
-    },
-    {
-      "packagist": false
-    }
-  ],
   "archive": {
     "exclude": [
       ".gitignore",
       "/tests"
     ]
   },
-  "config": {
-    "secure-http": false,
-    "platform": {
-      "php": "7.1.1"
-    }
-  },
   "require": {
-    "php": ">=7.1.0",
+    "php": "^7.1",
     "mongodb/mongodb": "^1.4",
     "robmorgan/phinx": "^0.10.6",
     "ext-pdo": "*"
