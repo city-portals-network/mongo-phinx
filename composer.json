@@ -5,14 +5,21 @@
     "MongoDB",
     "phinx"
   ],
+  "license": "MIT",
   "authors": [
     {
       "name": "Garipov Azamat",
       "email": "a.garipov@info74.ru"
     }
   ],
-  "support": {
-    "email": "a.garipov@info74.ru"
+  "require": {
+    "php": "^7.1",
+    "ext-pdo": "*",
+    "mongodb/mongodb": "^1.4",
+    "robmorgan/phinx": "^0.10.6"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.2"
   },
   "autoload": {
     "psr-4": {
@@ -30,16 +37,10 @@
       "/tests"
     ]
   },
-  "require": {
-    "php": "^7.1",
-    "mongodb/mongodb": "^1.4",
-    "robmorgan/phinx": "^0.10.6",
-    "ext-pdo": "*"
-  },
-  "require-dev": {
-    "phpunit/phpunit": "^7.2"
-  },
   "bin": [
     "bin/phinx-mongo"
-  ]
+  ],
+  "support": {
+    "email": "a.garipov@info74.ru"
+  }
 }

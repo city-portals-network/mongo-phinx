@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9fac4be663789ea9ffb3b406da232e40",
+    "content-hash": "f5eb67194604c37c31bf3f1ee27c02e7",
     "packages": [
         {
             "name": "cakephp/cache",
@@ -12,25 +12,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/cache.git",
-                "reference": "5941977c584843b9ddb32ec864a9483fbef88d52",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "5941977c584843b9ddb32ec864a9483fbef88d52"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/cakephp/cache/zipball/5941977c584843b9ddb32ec864a9483fbef88d52",
                 "reference": "5941977c584843b9ddb32ec864a9483fbef88d52",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "cakephp/core": "^3.6.0",
@@ -67,25 +55,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/collection.git",
-                "reference": "c5b3a3561eb92a5c25ffcc90ad3a1f193962065f",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "c5b3a3561eb92a5c25ffcc90ad3a1f193962065f"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/cakephp/collection/zipball/c5b3a3561eb92a5c25ffcc90ad3a1f193962065f",
                 "reference": "c5b3a3561eb92a5c25ffcc90ad3a1f193962065f",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": ">=5.6.0"
@@ -125,25 +101,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/core.git",
-                "reference": "82741aeb90ca2fbbf9fbbd507d56d53b081db237",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "82741aeb90ca2fbbf9fbbd507d56d53b081db237"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/cakephp/core/zipball/82741aeb90ca2fbbf9fbbd507d56d53b081db237",
                 "reference": "82741aeb90ca2fbbf9fbbd507d56d53b081db237",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "cakephp/utility": "^3.6.0",
@@ -186,25 +150,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/database.git",
-                "reference": "03d321df30c9949ac76c5b214d3b7cdbdb16f2cf",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "03d321df30c9949ac76c5b214d3b7cdbdb16f2cf"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/cakephp/database/zipball/03d321df30c9949ac76c5b214d3b7cdbdb16f2cf",
                 "reference": "03d321df30c9949ac76c5b214d3b7cdbdb16f2cf",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "cakephp/cache": "^3.6.0",
@@ -248,25 +200,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/datasource.git",
-                "reference": "c110235388e6b5a8b07b00f5312329177229eef4",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "c110235388e6b5a8b07b00f5312329177229eef4"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/cakephp/datasource/zipball/c110235388e6b5a8b07b00f5312329177229eef4",
                 "reference": "c110235388e6b5a8b07b00f5312329177229eef4",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "cakephp/core": "^3.6.0",
@@ -310,25 +250,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/utility.git",
-                "reference": "759915f39c648790dab3a9491eb3785b09f4a6c3",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "759915f39c648790dab3a9491eb3785b09f4a6c3"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/cakephp/utility/zipball/759915f39c648790dab3a9491eb3785b09f4a6c3",
                 "reference": "759915f39c648790dab3a9491eb3785b09f4a6c3",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "cakephp/core": "^3.6.0",
@@ -375,25 +303,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mongodb/mongo-php-library.git",
-                "reference": "bd148eab0493e38354e45e2cd7db59b90fdcad79",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "bd148eab0493e38354e45e2cd7db59b90fdcad79"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/mongodb/mongo-php-library/zipball/bd148eab0493e38354e45e2cd7db59b90fdcad79",
                 "reference": "bd148eab0493e38354e45e2cd7db59b90fdcad79",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "ext-hash": "*",
@@ -452,25 +368,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
                 "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
@@ -511,25 +415,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/phinx.git",
-                "reference": "f28a1c6ab1fa1f0295cddade9aea05eeb303bd2b",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "f28a1c6ab1fa1f0295cddade9aea05eeb303bd2b"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/cakephp/phinx/zipball/f28a1c6ab1fa1f0295cddade9aea05eeb303bd2b",
                 "reference": "f28a1c6ab1fa1f0295cddade9aea05eeb303bd2b",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "cakephp/collection": "^3.6",
@@ -597,25 +489,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "73e055cf2e6467715f187724a0347ea32079967c",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "73e055cf2e6467715f187724a0347ea32079967c"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/config/zipball/73e055cf2e6467715f187724a0347ea32079967c",
                 "reference": "73e055cf2e6467715f187724a0347ea32079967c",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^5.5.9|>=7.0.8",
@@ -673,25 +553,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "36f83f642443c46f3cf751d4d2ee5d047d757a27",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "36f83f642443c46f3cf751d4d2ee5d047d757a27"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/console/zipball/36f83f642443c46f3cf751d4d2ee5d047d757a27",
                 "reference": "36f83f642443c46f3cf751d4d2ee5d047d757a27",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^5.5.9|>=7.0.8",
@@ -754,25 +622,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "b28fd73fefbac341f673f5efd707d539d6a19f68",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "b28fd73fefbac341f673f5efd707d539d6a19f68"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/debug/zipball/b28fd73fefbac341f673f5efd707d539d6a19f68",
                 "reference": "b28fd73fefbac341f673f5efd707d539d6a19f68",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^5.5.9|>=7.0.8",
@@ -822,25 +678,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "8e03ca3fa52a0f56b87506f38cf7bd3f9442b3a0",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "8e03ca3fa52a0f56b87506f38cf7bd3f9442b3a0"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/filesystem/zipball/8e03ca3fa52a0f56b87506f38cf7bd3f9442b3a0",
                 "reference": "8e03ca3fa52a0f56b87506f38cf7bd3f9442b3a0",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^5.5.9|>=7.0.8",
@@ -884,25 +728,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "7cc359f1b7b80fc25ed7796be7d96adc9b354bae",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "7cc359f1b7b80fc25ed7796be7d96adc9b354bae"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/7cc359f1b7b80fc25ed7796be7d96adc9b354bae",
                 "reference": "7cc359f1b7b80fc25ed7796be7d96adc9b354bae",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
@@ -951,25 +783,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "3296adf6a6454a050679cde90f95350ad604b171",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "3296adf6a6454a050679cde90f95350ad604b171"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/3296adf6a6454a050679cde90f95350ad604b171",
                 "reference": "3296adf6a6454a050679cde90f95350ad604b171",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
@@ -1022,25 +842,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "c5010cc1692ce1fa328b1fb666961eb3d4a85bb0",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "c5010cc1692ce1fa328b1fb666961eb3d4a85bb0"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/yaml/zipball/c5010cc1692ce1fa328b1fb666961eb3d4a85bb0",
                 "reference": "c5010cc1692ce1fa328b1fb666961eb3d4a85bb0",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^5.5.9|>=7.0.8",
@@ -1095,25 +903,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/instantiator.git",
-                "reference": "185b8868aa9bf7159f5f953ed5afb2d7fcdc3bda",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "185b8868aa9bf7159f5f953ed5afb2d7fcdc3bda"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/doctrine/instantiator/zipball/185b8868aa9bf7159f5f953ed5afb2d7fcdc3bda",
                 "reference": "185b8868aa9bf7159f5f953ed5afb2d7fcdc3bda",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^7.1"
@@ -1161,25 +957,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "3e01bdad3e18354c3dce54466b7fbe33a9f9f7f8",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "3e01bdad3e18354c3dce54466b7fbe33a9f9f7f8"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/3e01bdad3e18354c3dce54466b7fbe33a9f9f7f8",
                 "reference": "3e01bdad3e18354c3dce54466b7fbe33a9f9f7f8",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^7.1"
@@ -1221,25 +1005,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phar-io/manifest.git",
-                "reference": "2df402786ab5368a0169091f61a7c1e0eb6852d0",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "2df402786ab5368a0169091f61a7c1e0eb6852d0"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/phar-io/manifest/zipball/2df402786ab5368a0169091f61a7c1e0eb6852d0",
                 "reference": "2df402786ab5368a0169091f61a7c1e0eb6852d0",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
@@ -1288,25 +1060,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phar-io/version.git",
-                "reference": "a70c0ced4be299a63d32fa96d9281d03e94041df",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "a70c0ced4be299a63d32fa96d9281d03e94041df"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/phar-io/version/zipball/a70c0ced4be299a63d32fa96d9281d03e94041df",
                 "reference": "a70c0ced4be299a63d32fa96d9281d03e94041df",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^5.6 || ^7.0"
@@ -1347,25 +1107,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionCommon.git",
-                "reference": "21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/phpDocumentor/ReflectionCommon/zipball/21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6",
                 "reference": "21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": ">=5.5"
@@ -1413,25 +1161,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "94fd0001232e47129dd3504189fa1c7225010d08",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "94fd0001232e47129dd3504189fa1c7225010d08"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/94fd0001232e47129dd3504189fa1c7225010d08",
                 "reference": "94fd0001232e47129dd3504189fa1c7225010d08",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^7.0",
@@ -1476,25 +1212,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "9c977708995954784726e25d0cd1dddf4e65b0f7",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "9c977708995954784726e25d0cd1dddf4e65b0f7"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/9c977708995954784726e25d0cd1dddf4e65b0f7",
                 "reference": "9c977708995954784726e25d0cd1dddf4e65b0f7",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^5.5 || ^7.0",
@@ -1535,25 +1259,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "33a7e3c4fda54e912ff6338c48823bd5c0f0b712",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "33a7e3c4fda54e912ff6338c48823bd5c0f0b712"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/phpspec/prophecy/zipball/33a7e3c4fda54e912ff6338c48823bd5c0f0b712",
                 "reference": "33a7e3c4fda54e912ff6338c48823bd5c0f0b712",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "doctrine/instantiator": "^1.0.2",
@@ -1610,25 +1322,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "865662550c384bc1db7e51d29aeda1c2c161d69a",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "865662550c384bc1db7e51d29aeda1c2c161d69a"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/865662550c384bc1db7e51d29aeda1c2c161d69a",
                 "reference": "865662550c384bc1db7e51d29aeda1c2c161d69a",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
@@ -1685,25 +1385,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-file-iterator.git",
-                "reference": "cecbc684605bb0cc288828eb5d65d93d5c676d3c",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "cecbc684605bb0cc288828eb5d65d93d5c676d3c"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/cecbc684605bb0cc288828eb5d65d93d5c676d3c",
                 "reference": "cecbc684605bb0cc288828eb5d65d93d5c676d3c",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^7.1"
@@ -1744,25 +1432,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-text-template.git",
-                "reference": "31f8b717e51d9a2afca6c9f046f5d69fc27c8686",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "31f8b717e51d9a2afca6c9f046f5d69fc27c8686"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/php-text-template/zipball/31f8b717e51d9a2afca6c9f046f5d69fc27c8686",
                 "reference": "31f8b717e51d9a2afca6c9f046f5d69fc27c8686",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
@@ -1797,25 +1473,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-timer.git",
-                "reference": "8b8454ea6958c3dee38453d3bd571e023108c91f",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "8b8454ea6958c3dee38453d3bd571e023108c91f"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/8b8454ea6958c3dee38453d3bd571e023108c91f",
                 "reference": "8b8454ea6958c3dee38453d3bd571e023108c91f",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^7.1"
@@ -1858,25 +1522,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "21ad88bbba7c3d93530d93994e0a33cd45f02ace",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "21ad88bbba7c3d93530d93994e0a33cd45f02ace"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/21ad88bbba7c3d93530d93994e0a33cd45f02ace",
                 "reference": "21ad88bbba7c3d93530d93994e0a33cd45f02ace",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "ext-tokenizer": "*",
@@ -1919,25 +1571,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "400a3836ee549ae6f665323ac3f21e27eac7155f",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "400a3836ee549ae6f665323ac3f21e27eac7155f"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/400a3836ee549ae6f665323ac3f21e27eac7155f",
                 "reference": "400a3836ee549ae6f665323ac3f21e27eac7155f",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "doctrine/instantiator": "^1.1",
@@ -2015,25 +1655,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/code-unit-reverse-lookup.git",
-                "reference": "4419fcdb5eabb9caa61a27c7a1db532a6b55dd18",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "4419fcdb5eabb9caa61a27c7a1db532a6b55dd18"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/code-unit-reverse-lookup/zipball/4419fcdb5eabb9caa61a27c7a1db532a6b55dd18",
                 "reference": "4419fcdb5eabb9caa61a27c7a1db532a6b55dd18",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^5.6 || ^7.0"
@@ -2072,25 +1700,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "591a30922f54656695e59b1f39501aec513403da",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "591a30922f54656695e59b1f39501aec513403da"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/591a30922f54656695e59b1f39501aec513403da",
                 "reference": "591a30922f54656695e59b1f39501aec513403da",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^7.1",
@@ -2148,25 +1764,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/diff.git",
-                "reference": "366541b989927187c4ca70490a35615d3fef2dce",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "366541b989927187c4ca70490a35615d3fef2dce"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/366541b989927187c4ca70490a35615d3fef2dce",
                 "reference": "366541b989927187c4ca70490a35615d3fef2dce",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^7.1"
@@ -2216,25 +1820,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/environment.git",
-                "reference": "cd0871b3975fb7fc44d11314fd1ee20925fce4f5",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "cd0871b3975fb7fc44d11314fd1ee20925fce4f5"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/cd0871b3975fb7fc44d11314fd1ee20925fce4f5",
                 "reference": "cd0871b3975fb7fc44d11314fd1ee20925fce4f5",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^7.0"
@@ -2278,25 +1870,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/exporter.git",
-                "reference": "234199f4528de6d12aaa58b612e98f7d36adb937",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "234199f4528de6d12aaa58b612e98f7d36adb937"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/234199f4528de6d12aaa58b612e98f7d36adb937",
                 "reference": "234199f4528de6d12aaa58b612e98f7d36adb937",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^7.0",
@@ -2357,25 +1937,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/global-state.git",
-                "reference": "e8ba02eed7bbbb9e59e43dedd3dddeff4a56b0c4",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "e8ba02eed7bbbb9e59e43dedd3dddeff4a56b0c4"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/global-state/zipball/e8ba02eed7bbbb9e59e43dedd3dddeff4a56b0c4",
                 "reference": "e8ba02eed7bbbb9e59e43dedd3dddeff4a56b0c4",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^7.0"
@@ -2420,25 +1988,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/object-enumerator.git",
-                "reference": "7cfd9e65d11ffb5af41198476395774d4c8a84c5",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "7cfd9e65d11ffb5af41198476395774d4c8a84c5"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/object-enumerator/zipball/7cfd9e65d11ffb5af41198476395774d4c8a84c5",
                 "reference": "7cfd9e65d11ffb5af41198476395774d4c8a84c5",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^7.0",
@@ -2479,25 +2035,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/object-reflector.git",
-                "reference": "773f97c67f28de00d397be301821b06708fca0be",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "773f97c67f28de00d397be301821b06708fca0be"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/object-reflector/zipball/773f97c67f28de00d397be301821b06708fca0be",
                 "reference": "773f97c67f28de00d397be301821b06708fca0be",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^7.0"
@@ -2536,25 +2080,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/recursion-context.git",
-                "reference": "5b0cd723502bac3b006cbf3dbf7a1e3fcefe4fa8",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "5b0cd723502bac3b006cbf3dbf7a1e3fcefe4fa8"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/recursion-context/zipball/5b0cd723502bac3b006cbf3dbf7a1e3fcefe4fa8",
                 "reference": "5b0cd723502bac3b006cbf3dbf7a1e3fcefe4fa8",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^7.0"
@@ -2601,25 +2133,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/resource-operations.git",
-                "reference": "ce990bb21759f94aeafd30209e8cfcdfa8bc3f52",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "ce990bb21759f94aeafd30209e8cfcdfa8bc3f52"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/resource-operations/zipball/ce990bb21759f94aeafd30209e8cfcdfa8bc3f52",
                 "reference": "ce990bb21759f94aeafd30209e8cfcdfa8bc3f52",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": ">=5.6.0"
@@ -2655,25 +2175,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/version.git",
-                "reference": "99732be0ddb3361e16ad77b68ba41efc8e979019",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "99732be0ddb3361e16ad77b68ba41efc8e979019"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/version/zipball/99732be0ddb3361e16ad77b68ba41efc8e979019",
                 "reference": "99732be0ddb3361e16ad77b68ba41efc8e979019",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": ">=5.6"
@@ -2710,25 +2218,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/theseer/tokenizer.git",
-                "reference": "cb2f008f3f05af2893a87208fe6a6c4985483f8b",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "cb2f008f3f05af2893a87208fe6a6c4985483f8b"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/theseer/tokenizer/zipball/cb2f008f3f05af2893a87208fe6a6c4985483f8b",
                 "reference": "cb2f008f3f05af2893a87208fe6a6c4985483f8b",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
@@ -2762,25 +2258,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/assert.git",
-                "reference": "0df1908962e7a3071564e857d86874dad1ef204a",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "reference": "0df1908962e7a3071564e857d86874dad1ef204a"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/webmozart/assert/zipball/0df1908962e7a3071564e857d86874dad1ef204a",
                 "reference": "0df1908962e7a3071564e857d86874dad1ef204a",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://composer.package.portal/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^5.3.3 || ^7.0"
@@ -2825,11 +2309,8 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.1.0",
+        "php": "^7.1",
         "ext-pdo": "*"
     },
-    "platform-dev": [],
-    "platform-overrides": {
-        "php": "7.1.1"
-    }
+    "platform-dev": []
 }
