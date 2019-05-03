@@ -2,7 +2,8 @@
   "name": "city-portals-network/mongo-phinx",
   "description": "MongoDB Phinx Adapter",
   "keywords": [
-    "MongoDB, phinx"
+    "MongoDB",
+    "phinx"
   ],
   "authors": [
     {
@@ -37,11 +38,6 @@
   },
   "require-dev": {
     "phpunit/phpunit": "^7.2"
-  },
-  "extra": {
-    "branch-alias": {
-      "dev-master": "1.0.2"
-    }
   },
   "bin": [
     "bin/phinx-mongo"
